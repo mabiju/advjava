@@ -1,0 +1,9 @@
+1. Explain the historical background of Java Programming Language with its architecture.
+2. Explain different versions of "For Loop" used in Java Programming Language.
+3. Define exception handling. Exemplify the use of different keywords used to handle exceptions in Java Programming language.
+4. Differentiate between final and static modifiers with suitable examples.
+5. What is Threads? Exemplify the life cycle of thread with appropriate example.
+                                    ***
+
+Assigned : 26th March 2024
+Deadline : 15th April 2024

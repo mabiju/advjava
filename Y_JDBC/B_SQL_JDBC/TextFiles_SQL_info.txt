@@ -1,0 +1,2 @@
+Please follow the instructions as mentioned in given pictures.... !!!
+lib folder contains the mysql connector.
