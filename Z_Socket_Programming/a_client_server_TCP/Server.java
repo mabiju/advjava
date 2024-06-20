@@ -1,5 +1,5 @@
 // java program for server
-package Z_Socket_Programming.a_client_server;
+package Z_Socket_Programming.a_client_server_TCP;
 
 import java.net.*;
 import java.io.*;
