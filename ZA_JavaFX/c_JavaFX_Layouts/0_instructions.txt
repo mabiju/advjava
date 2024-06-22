@@ -1,0 +1,3 @@
+These programs are supposed to be done with Apache Netbeans IDE.
+
+Note: To run the file in Apache Netbeans Press Shift + F6 key or Right Click on File > Run File(Option)

@@ -1,0 +1,42 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMain.java to edit this template
+ */
+package javafxapplication5;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.FlowPane;
+import javafx.stage.Stage;
+
+/**
+ *
+ * @author Vijaya Malla
+ */
+public class JavaFXApplication5 extends Application {
+    
+    @Override
+    public void start(Stage primaryStage) {
+        primaryStage.setTitle("FlowPane Demo");
+        FlowPane fp = new FlowPane();
+        fp.setVgap(10);
+        fp.setHgap(20);
+        fp.setPrefWrapLength(500);
+        fp.getChildren().add(new Button("Hello"));
+        fp.getChildren().add(new Button("Hi"));
+        fp.getChildren().add(new Button("Nepal"));
+        fp.getChildren().add(new Button("Namaste"));
+        Scene sc = new Scene(fp,600,400);
+        primaryStage.setScene(sc);
+        primaryStage.show();
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        launch(args);
+    }
+    
+}

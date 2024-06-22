@@ -1,0 +1,40 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMain.java to edit this template
+ */
+package javafxapplication5;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
+
+/**
+ *
+ * @author Vijaya Malla
+ */
+public class JavaFXApplication5 extends Application {
+    
+    @Override
+    public void start(Stage primaryStage) {
+        primaryStage.setTitle("BorderPane Demo");
+        BorderPane borderPane = new BorderPane();
+        borderPane.setTop(new Label("TOP"));
+        borderPane.setLeft(new Label("LEFT"));
+        borderPane.setRight(new Label("RIGHT"));
+        borderPane.setCenter(new Label("CENTER"));
+        borderPane.setBottom(new Label("BOTTOM"));
+        Scene sc = new Scene(borderPane,800,400);
+        primaryStage.setScene(sc);
+        primaryStage.show();
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        launch(args);
+    }
+    
+}
