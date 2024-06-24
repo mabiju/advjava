@@ -1,0 +1,41 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMain.java to edit this template
+ */
+package javafxappuicomponent;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.Tooltip;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+
+/**
+ *
+ * @author Vijaya Malla
+ */
+public class JavaFXAppUIComponent extends Application {
+
+    @Override
+    public void start(Stage primaryStage) {
+        primaryStage.setTitle("JavaFX Tooltip demo");
+        PasswordField pfpass = new PasswordField();
+        Tooltip tt = new Tooltip();
+        StackPane sp = new StackPane();
+        tt.setText("Your Passoword here....");
+        pfpass.setTooltip(tt);
+        sp.getChildren().add(pfpass);
+        Scene sc = new Scene(sp, 300, 250);
+        primaryStage.setScene(sc);
+        primaryStage.show();
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+}

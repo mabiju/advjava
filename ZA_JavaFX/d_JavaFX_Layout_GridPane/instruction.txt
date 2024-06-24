@@ -1,0 +1,6 @@
+1. Create a Java Project with VS Code with "No Build Tools"
+2. Add Destination Where you want to create your project
+3. Provide your project name
+4. Add JavaFX Libraries in "Refeneced Libraries" under "Java Project"
+5. Then follow the screenshot instructions given for json configuration to run JavaFX file using VS Code.
+Enjoy !!!  

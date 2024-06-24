@@ -1,0 +1,45 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMain.java to edit this template
+ */
+package javafxappuicomponent;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+/**
+ *
+ * @author Vijaya Malla
+ */
+public class JavaFXAppUIComponent extends Application {
+
+    @Override
+    public void start(Stage primaryStage) {
+        primaryStage.setTitle("JavaFX RadioButton demo");
+        ToggleGroup group = new ToggleGroup();
+        RadioButton male = new RadioButton("Male");
+        RadioButton female = new RadioButton("Female");
+        RadioButton others = new RadioButton("Others");
+        male.setToggleGroup(group);
+        female.setToggleGroup(group);
+        others.setToggleGroup(group);
+        VBox root = new VBox();
+        root.setSpacing(10);
+        root.getChildren().addAll(male, female, others);
+        Scene scene = new Scene(root, 300, 300);
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+}
